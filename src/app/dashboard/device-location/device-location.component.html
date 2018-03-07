@@ -1,0 +1,4 @@
+<agm-map [latitude]="20.5937" [longitude]="78.9629" [zoom]="4">
+  <agm-marker *ngFor="let marker of DeviceLocation" [latitude]="ConvertString(marker.Lat)" [longitude]="ConvertString(marker.Lng)">
+  </agm-marker>
+</agm-map>

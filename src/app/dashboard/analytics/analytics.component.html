@@ -1,0 +1,39 @@
+<div id="analytics details">
+    <div class="row">
+        <div class="col-lg-6">
+
+            <div class="box box-primary" *ngIf="barChart">
+                <div class="box-header">
+                    Last 10 Hrs Device Data
+                </div>
+                <div class="box-body">
+                    <app-charts [ChartData]="barChart"></app-charts>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="box box-primary" *ngIf="lineChart">
+                <div class="box-header">
+                    Last 10 Hrs Device Trends
+                </div>
+                <div class="box-body">
+                    <app-charts [ChartData]="lineChart"></app-charts>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="box box-primary" *ngIf="donoughtChart">
+                <div class="box-header">
+                    Current device Status
+                </div>
+                <div class="box-body">
+                    <app-charts [ChartData]="donoughtChart"></app-charts>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

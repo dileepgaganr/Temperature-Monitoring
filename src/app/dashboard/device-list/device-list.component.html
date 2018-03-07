@@ -1,0 +1,3 @@
+<div class="callout cursor alert-info"  *ngFor="let data of DeviceList" [class.callout-danger]="selected==data.DeviceId" (click)="getDeviceDetail(data.DeviceId)">
+ <span class=""> {{data.DeviceName}}</span>
+</div>

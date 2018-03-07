@@ -1,0 +1,32 @@
+<div class="row">
+  <section class="col-lg-4">
+    <div class="box box-primary">
+      <div class="box-header">
+        Device List
+      </div>
+      <div class="box-body">
+        <app-device-list [DeviceList]="deviceList" ></app-device-list>
+      </div>
+    </div>
+
+  </section>
+  <section class="col-lg-8">
+    <div class="box box-primary">
+      <div class="box-header">
+        Device Location
+      </div>
+      <div class="box-body">
+        <app-device-location [DeviceLocation]="deviceList"></app-device-location>
+      </div>
+    </div>
+    <div class="box box-primary" *ngIf="deviceDetail">
+      <div class="box-header">
+        Device Status
+      </div>
+      <div class="box-body">
+        <app-device-status [DeviceDetail]="deviceDetail"></app-device-status>
+      </div>
+    </div>
+    
+  </section>
+</div>

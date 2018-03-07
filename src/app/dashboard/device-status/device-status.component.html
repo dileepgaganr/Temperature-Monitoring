@@ -1,0 +1,29 @@
+<div *ngIf="DeviceDetail">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="small-box bg-green">
+        <div class="inner">
+          <p>Current Temperature</p>
+          <h3>{{DeviceDetail[0].CurrentValue}}
+            <sup style="font-size: 20px">o</sup>C
+          </h3>
+
+        </div>
+        <div class="icon">
+          <i class="ion ion-stats-bars"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="box green">
+        <div class="box-header">
+          <h3>{{DeviceDetail[0].DeviceName}}
+          </h3>
+        </div>
+        <div class="box-body">
+          <label class="label-info">{{DeviceDetail[0].Description}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

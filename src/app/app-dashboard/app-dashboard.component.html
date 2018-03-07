@@ -1,0 +1,21 @@
+
+<body class="hold-transition skin-blue sidebar-mini" [class.sidebar-collapse]="toggle">
+  <div class="wrapper">
+    <app-dashboard-header (toggleSidebar)="onToggle($event)"></app-dashboard-header>
+    <app-dashboard-sidebar></app-dashboard-sidebar>
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Dashboard
+        </h1>      
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
+    </div>
+    <app-dashboard-footer></app-dashboard-footer>
+  </div>
+</body>

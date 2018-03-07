@@ -1,0 +1,10 @@
+<div *ngIf="ChartData">
+    <div *ngIf="ChartData.type!=='pie' && ChartData.type!=='doughnut' else pieChart">
+        <canvas baseChart [chartType]="ChartData.type" [datasets]="ChartData.data" [labels]="ChartData.label" [legend]="true" [options]="chartOptions">
+        </canvas>
+    </div>
+    <ng-template #pieChart>
+        <canvas baseChart [chartType]="ChartData.type" [data]="ChartData.data" [labels]="ChartData.label" [legend]="true" [options]="chartOptions">
+        </canvas>
+    </ng-template>
+</div>

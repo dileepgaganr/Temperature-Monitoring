@@ -1,0 +1,72 @@
+{
+    "Device": [
+        {
+            "DeviceId": 1,
+            "DeviceName": "Device 1",
+            "Description": "Description of Device 1",
+            "Lat":"12.2958",
+            "Lng":"76.6394",
+            "CurrentValue": 50.30
+        },
+        {
+            "DeviceId": 2,
+            "DeviceName": "Device 2",
+            "Description": "Description of Device 2",
+            "Lat":"12.9716",
+            "Lng":"77.5946",
+            "CurrentValue": 20.30
+        },
+        {
+            "DeviceId": 3,
+            "DeviceName": "Device 3",
+            "Description": "Description of Device 3",
+            "Lat":"19.0760",
+            "Lng":"72.8777",
+            "CurrentValue": 18.30
+        },
+        {
+            "DeviceId": 4,
+            "DeviceName": "Device 4",
+            "Description": "Description of Device 4",
+            "Lat":"28.7041",
+            "Lng":"77.1025",
+            "CurrentValue": 5.30
+        },
+        {
+            "DeviceId": 5,
+            "DeviceName": "Device 5",
+            "Description": "Description of Device 5",
+            "Lat":"18.5204",
+            "Lng":"73.8567",
+            "CurrentValue": 25.30
+           
+        },
+        {
+            "DeviceId": 6,
+            "DeviceName": "Device 6",
+            "Description": "Description of Device 6",
+            "Lat":"17.3850",
+            "Lng":"78.4867",
+            "CurrentValue": 15.30
+           
+        },
+        {
+            "DeviceId": 7,
+            "DeviceName": "Device 7",
+            "Description": "Description of Device 7",
+            "Lat":"8.5241",
+            "Lng":"76.9366",
+            "CurrentValue": 35.30
+           
+        },
+        {
+            "DeviceId": 8,
+            "DeviceName": "Device 8",
+            "Description": "Description of Device 8",
+            "Lat":"15.3647",
+            "Lng":"75.1240",
+            "CurrentValue": 25.30
+           
+        }
+    ]
+}

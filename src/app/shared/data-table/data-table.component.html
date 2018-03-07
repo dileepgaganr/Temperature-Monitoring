@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control pull-right" type="text" [(ngModel)]="search" placeholder="Search">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-bordered table-hover dataTable" role="grid">
+            <thead>
+                <tr>
+                    <th *ngFor="let col of TableOption.Columns; let i=index" (click)="col.Sortable?sort(i):''" class="cursor" [hidden]="!col.Visible">
+                        {{col.ColumnName}}
+                        <i *ngIf="col.Sortable" class="pull-right" [ngClass]="[
+                        (column == i && !isDesc )?'fa fa-angle-double-down':'fa fa-angle-double-up']"></i>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let dat of (TableOption.Data | dtSort: globalData: {property: column, direction: direction} |
+                dtSearch :globalData : search)">
+                    <td *ngFor="let item of dat; let i=index" [hidden]="!TableOption.Columns[i].Visible">
+                        {{item}}
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Pagination goes here
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
