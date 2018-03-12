@@ -9,8 +9,7 @@ import { DashboardLayoutModule } from './dashboard-layout/dashboard-layout.modul
 import { Configuration } from './shared/configuration';
 import { environment } from '../environments/environment';
 import { DetailsService } from './services/details.service';
-
-// import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -24,6 +23,7 @@ import { DetailsService } from './services/details.service';
     HttpModule,
     AppRoutingModule,
     DashboardLayoutModule,
+    ReactiveFormsModule
 
   ],
   providers: [Configuration, DetailsService],

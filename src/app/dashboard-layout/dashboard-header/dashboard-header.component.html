@@ -19,13 +19,13 @@
       <ul class="nav navbar-nav">
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu" [class.open]="open">
-          <a (click)="openProfile()" class="dropdown-toggle cursor" data-toggle="dropdown">
-            <span class="hidden-xs">User</span>
+          <a routerLink="/Login" class="dropdown-toggle cursor" data-toggle="dropdown">
+            <span class="hidden-xs">Logout</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
-                <a routerLink="Login" class="btn btn-default btn-flat">Sign Out</a>
+                <a routerLink="/Login" class="btn btn-default btn-flat">Sign Out</a>
             </li>
           </ul>
         </li>

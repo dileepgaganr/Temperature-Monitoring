@@ -29,8 +29,9 @@ export class DataTableComponent implements OnInit {
 
   ngOnInit() {
     this.curPage = 1; //set current page
-    this.pageSize = 2; //set page size
+    this.pageSize = 5; //set page size
     this.globalData = this.TableOption.Data;
+    console.log(this.pageSize);
   }
 
   sort(property) {

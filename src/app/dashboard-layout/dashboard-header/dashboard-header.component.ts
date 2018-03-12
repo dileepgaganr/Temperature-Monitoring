@@ -20,11 +20,8 @@ export class DashboardHeaderComponent implements OnInit {
     this.toggleSidebar.emit(this.toggle);
   }
 
-  openProfile() {
-    this.open = this.open ? false : true;
-  }
+  // openProfile() {
+  //   this.open = this.open ? false : true;
+  // }
 
-  logout(){
-    
-  }
 }

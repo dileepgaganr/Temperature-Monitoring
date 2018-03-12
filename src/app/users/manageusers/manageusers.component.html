@@ -4,40 +4,15 @@
   </div>
 </div>
 
-<!-- <div class="row" *ngIf="users">
-  <div class="col-lg-12">
-    <table class="table table-bordered table-hover dataTable" role="grid">
-      <thead>
-        <tr>
-          <th>
-            User Name
-          </th>
-          <th>
-            Email
-          </th>
-          <th>
-            Location
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of users">
-          <td>
-            {{user.Name}}
-          </td>
-          <td>
-            {{user.Email}}
-          </td>
-          <td>
-            {{user.Location}}
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div> -->
 <div class="row" *ngIf="dataTableOption">
   <div class="col-lg-12">
-<custom-data-table [TableOption]="dataTableOption"></custom-data-table>
+    <div class="box box-primary">
+      <div class="box-header">
+        <h3>User Details</h3>
+      </div>
+      <div class="box-body">
+        <custom-data-table [TableOption]="dataTableOption"></custom-data-table>
+      </div>
+    </div>
   </div>
 </div>
