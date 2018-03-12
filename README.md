@@ -12,7 +12,7 @@ NOTE: No script files are used, only css part of Admin LTE is used in the applic
 #Two way binding using behaviour observable, Input, Output are used as part of component interaction.
 #Google map is implemented using agm/core.
 #Chart js is implemented providing various type of charts.
-#Prime Ng data-table is used as part of application.
+#Custom data-table plugin created and used.
 
 Note: Please use your own Google map api key to use google map integrated with application/ you can put you key in environment file.
 
